@@ -37,16 +37,6 @@ for i in range(0, len(orgData)):  # len(data) = 21263
 print("Empty cells: ", counter)
 '''orgData.info()'''  # all correct data types
 
-# ---------------------------------------------------- Analysing -------------------------------------------------------
-
-# Histograms for every feature
-# Check outliers in important features
-'''orgData.hist(bins=50, figsize=(20, 15))
-plt.show()'''
-
-# Check mean vs max, min
-'''orgData.describe()'''
-
 # --------------------------------------------------- Splitting --------------------------------------------------------
 print_heading("Splitting")
 
@@ -74,6 +64,16 @@ train_set.to_csv("Data/train_set.csv", index=False)
 test_set.to_csv("Data/test_set.csv", index=False)'''
 
 print("Train set and Test set: stored in separate files.")
+
+# ---------------------------------------------------- Analysing -------------------------------------------------------
+
+# Histograms for every feature
+# Check outliers in important features
+'''orgData.hist(bins=50, figsize=(20, 15))
+plt.show()'''
+
+# Check mean vs max, min
+'''orgData.describe()'''
 
 # --------------------------------------------------- Visualizing ------------------------------------------------------
 print_heading("Visualizing")
